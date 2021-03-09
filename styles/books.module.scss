@@ -1,0 +1,48 @@
+._booksContainer{
+    nav{
+        display: flex;
+        height: 40px;
+        background: rgb(240, 244, 255);
+        ul{
+            display: flex;
+            color: rgb(4, 71, 83);
+            margin: 0;
+            li{
+                display:block;
+                cursor: pointer;
+                margin: auto 8px;
+            }
+        }
+        h2{
+            margin: auto 15px;
+        }
+    }
+    ._books{
+        padding: 20px;
+        ._eBook{
+            background: rgb(243, 244, 252);
+            margin: 5px;
+            width: max-content;
+            transition: .5s;
+            padding: 8px;
+
+            cursor: pointer;
+            filter: drop-shadow(0px 0px 6px rgba(85, 78, 95, 0.26));
+            &:hover{
+                transform: scale(1.08);
+                transition: .5s;
+            }
+            span:nth-child(1){
+               display: block;
+               font-weight: 900;
+            }
+            span:nth-child(2){
+                font-weight: 200;
+                font-size: 12px;
+                background: rgb(4, 71, 83);
+                color: white;
+             }
+        }
+    }
+
+}
